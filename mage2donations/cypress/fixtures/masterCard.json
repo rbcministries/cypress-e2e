@@ -1,0 +1,15 @@
+{
+    "firstName": "M.R.",
+    "lastName": "DeHaan",
+    "address1": "3000 Kraft Ave SE",
+    "city": "Grand Rapids",
+    "state": "Michigan",
+    "zip": 49512,
+    "country": "United States",
+    "card": {
+        "number": 5454545454545454,
+        "month": 1,
+        "year": 2025,
+        "cvv": "001"
+    }
+}

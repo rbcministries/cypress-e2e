@@ -1,6 +1,7 @@
 {
     "firstName": "M.R.",
     "lastName": "DeHaan",
+    "email": "mrdehaan@odb.org",
     "address1": "3000 Kraft Ave SE",
     "city": "Grand Rapids",
     "state": "Michigan",
@@ -8,8 +9,8 @@
     "country": "United States",
     "card": {
         "number": 5454545454545454,
-        "month": 1,
-        "year": 2025,
+        "month": "1",
+        "year": "2025",
         "cvv": "001"
     }
 }

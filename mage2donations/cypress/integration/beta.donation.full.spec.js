@@ -3,6 +3,8 @@ import {expect} from 'chai';
 /**
 * Test the running of a donation on a  live running site with test credentials.
 */
+var i = 0;
+for (i = 0; i < 10; i++) {
 describe('Transactions', () =>  {
     context('successful', () => {
         it('add to cart, and checkout', () => {
@@ -12,7 +14,7 @@ describe('Transactions', () =>  {
                 // Should redirect to a product page
                 expect(cy.location('pathname')).to.not.equal('/');
 
-                cy.get('#amount').type('2');
+                cy.get('#amount').type(i.toString());
 
                 cy.get('label[for=_recurring-no]').click();
 
@@ -51,10 +53,18 @@ describe('Transactions', () =>  {
                 cy.get('input[name="payment[cc_cid]"]:visible')
                 .type(donation.card.cvv);
 
-                cy.get('#submitDonationButton').should('be.visible').click();
+               // console.log('Waiting until the next minute to click at the same time...');
 
-                cy.location('pathname').should('eq', '/checkout/onepage/success/');
+              //  setInterval(() =>{
+                    let date  = new Date();
+              //      console.log(date.getSeconds());
+                   // if ( date.getSeconds() === 0 ) {
+                cy.get('#submitDonationButton').should('be.visible').click();
+                cy.location('pathname', {timeout: 10000}).should('eq', '/checkout/onepage/success/');
+                //    }
+              //  }, 1000);
             })
         })
     })
 })
+}

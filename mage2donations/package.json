@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npx cypress run --record --key 9c2d2659-7538-4a24-b4c5-ba4270e106a7",
+    "build": "docker build -t magento-e2e . && docker tag magento-e2e:latest 068206000572.dkr.ecr.us-east-1.amazonaws.com/magento-e2e:latest && docker push 068206000572.dkr.ecr.us-east-1.amazonaws.com/magento-e2e:latest"
   },
   "author": "",
   "license": "ISC",

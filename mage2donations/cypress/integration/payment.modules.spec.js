@@ -1,8 +1,10 @@
 describe( 'Payment Modules', () => {
-	it('Test Payment Modules for graphical and functional results', () => {
+	it('Test that one time selects Stripe', () => {
 		cy.server();
 		cy.route('https://dev.mage2.org/checkout').as('checkoutpage');
 
+
+		/* TEST: One time selection results in Stripe */
 		cy.visit(('https://dev.mage2.org/intm4.html'));
 		cy.wait(2000);
 		cy.get('#amount').click().type('4.11');
@@ -23,10 +25,12 @@ describe( 'Payment Modules', () => {
 		//cy.wait(3000);
 		cy.get('#activate_stripe').should("exist");
 
+	});
 
 
+	it('Test that recurring payments still user Paperless', () => {
 
-
+		/* TEST: One recurring selection results in Paperless */
 		cy.visit(('https://dev.mage2.org/intm4.html'));
 		cy.wait(2000);
 		cy.get('#amount').click().type('4.11');

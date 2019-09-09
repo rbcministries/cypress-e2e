@@ -7,6 +7,6 @@ Instructions:
 
 To run as Docker images
 - run `npm run build` to push to ECR
-- Create new task in ECS using magento-e2e cluster and Fargate
+- Create new task in ECS using magento-e2e cluster and Fargate magento2tests Task definition, making sure ports 443 and 80 are open
 
 

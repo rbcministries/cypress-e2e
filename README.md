@@ -12,3 +12,7 @@ To get started
 7. `npm run test:build`
 8. View `mochawesome-report/reports.html` in a browser
 9. To upload to s3, run `npm run test:upload`
+
+TODO:
+- Add buildspec.yml and cloudwatch event to run on an interval
+- Add watcher to run and re-upload on file changes

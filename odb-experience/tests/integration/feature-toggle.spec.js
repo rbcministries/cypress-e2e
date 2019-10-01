@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-context.skip('Feature toggling', ()=>{
+context('Feature toggling', ()=>{
 
     it('Devotional Image should not appear after api call', ()=>{
         cy.server();
@@ -9,7 +9,7 @@ context.skip('Feature toggling', ()=>{
             response:{DevotionalImage:false},
             headers: { 'Access-Control-Allow-Origin':'*'}
         });
-        cy.visit('http://localhost:3000/2019/05/21/marvelously-unique/')
+        cy.visit('http://odb.org/2019/05/21/marvelously-unique/')
         cy.get('.today-img').should('not.exist')
     })
 
@@ -21,19 +21,19 @@ context.skip('Feature toggling', ()=>{
             response:{DevotionalImage:true},
             headers: { 'Access-Control-Allow-Origin':'*'}
         });
-        cy.visit('http://localhost:3000/2019/05/21/marvelously-unique/')
+        cy.visit('http://odb.org/2019/05/21/marvelously-unique/')
         cy.get('.today-img').should('exist')
     })
 
     it('Devotional Image should appear after reading from local storage', ()=>{
         localStorage.setItem('odb-features',JSON.stringify({DevotionalImage:true}))
-        cy.visit('http://localhost:3000/2019/05/21/marvelously-unique/')
+        cy.visit('http://odb.org/2019/05/21/marvelously-unique/')
         cy.get('.today-img').should('exist')
     })
 
     it('Devotional Image should not appear after reading from local storage', ()=>{
         localStorage.setItem('odb-features',JSON.stringify({DevotionalImage:false}))
-        cy.visit('http://localhost:3000/2019/05/21/marvelously-unique/')
+        cy.visit('http://odb.org/2019/05/21/marvelously-unique/')
         cy.get('.today-img').should('not.exist')
     })
 })

@@ -1,23 +1,21 @@
 import 'cypress-react-unit-test'
-import React from 'react'
-
 
 describe("Translation Admin", ()=>{
   it("Admin dashboard button works and translate admin works", async ()=> {
 
-    var textArray = [
-      "Cypress",
-      "Admin",
-      "Translation",
-      "Text",
-      "ODB",
-      "Engine",
-      "Test",
-      "Random"
-    ];
-    let testTerm = "Cypress Test: " + textArray[Math.floor(Math.random()*textArray.length)] + " " + textArray[Math.floor(Math.random()*textArray.length)] + " " + textArray[Math.floor(Math.random()*textArray.length)];
+    // var textArray = [
+    //   "Cypress",
+    //   "Admin",
+    //   "Translation",
+    //   "Text",
+    //   "ODB",
+    //   "Engine",
+    //   "Test",
+    //   "Random"
+    // ];
+    // let testTerm = "Cypress Test: " + textArray[Math.floor(Math.random()*textArray.length)] + " " + textArray[Math.floor(Math.random()*textArray.length)] + " " + textArray[Math.floor(Math.random()*textArray.length)];
 
-    await cy.visit('/');
+    await cy.visit('https://odb.org');
     cy.login();
     cy.get('.dropbtn > .fa').click();
     cy.get('.dropdown-content > div > .mobile-menu-action').click();

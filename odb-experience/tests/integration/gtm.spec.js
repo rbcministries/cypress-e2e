@@ -1,6 +1,6 @@
 import {assert, expect} from 'chai';
 
-describe.skip('Google Tag Manager', () => {
+describe('Google Tag Manager', () => {
  /*
  Passes locally, but fails on build with:
   shouldGoogle Tag Manager GTM: Data Layer Loaded and English Key found:

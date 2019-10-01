@@ -1,0 +1,17 @@
+{
+    "baseUrl": "https://odb.org",
+    "env": {
+      "cypress-react-unit-test": {
+        "react": "node_modules/react/umd/react.development.js",
+        "react-dom": "node_modules/react-dom/umd/react-dom.development.js"
+      }
+    },
+    "integrationFolder": "tests/integration",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "reportDir": "../reports"
+    }
+}

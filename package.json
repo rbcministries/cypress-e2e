@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "npm run test-odbx && npm run test-mage2",
+    "test-odbx": "npx cypress run --project ./odb-experience --reporter mochawesome --config video=false",
+    "test-mage2": "npx cypress run --project ./mage2donations --reporter mochawesome --config video=false",
+    "test:build": "npm test && npx mochawesome-merge --reportDir reports > reports.json && npx marge reports.json",
+    "test:upload": "npm run test:build && aws s3 sync mochawesome-report/ s3://odbtests"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "cypress": "^3.4.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^2.0.1",
+    "mochawesome-report-generator": "^4.0.1"
+  }
+}

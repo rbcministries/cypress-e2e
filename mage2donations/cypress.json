@@ -1,3 +1,9 @@
 {
-  "projectId": "jk7try"
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "reportDir": "../reports"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "name": "odb-experience",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --reporter mochawesome",
+    "build": "docker build -t odb-experience-test . && docker tag odb-experience-test:latest 068206000572.dkr.ecr.us-east-1.amazonaws.com/odb-experience-test:latest && docker push 068206000572.dkr.ecr.us-east-1.amazonaws.com/odb-experience-test:latest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress-react-unit-test": "^2.4.3",
+    "chai": "^4.1.0",
+    "cypress": "^3.4.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  }
+}

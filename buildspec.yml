@@ -7,7 +7,7 @@ phases:
     runtime-versions:
       nodejs: 10
     commands:
-      - apt-get update && apt-get install awscli
+      - apt-get update && apt-get install awscli -y
       - cd $CODEBUILD_SRC_DIR
       - npm run install:all
   build:

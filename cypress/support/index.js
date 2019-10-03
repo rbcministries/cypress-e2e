@@ -15,17 +15,6 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import 'cypress-react-unit-test'
-import 'cypress-axe'
-
-
-Cypress.on('window:load', win => {
-  win.ReactDOM = window.ReactDOM || win.ReactDOM;
-});
-//Remove fetch so libraries will polyfill and use XHR so Cypress can intercept the calls
-Cypress.on('window:before:load', win => {
-  delete win.fetch;
-});
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

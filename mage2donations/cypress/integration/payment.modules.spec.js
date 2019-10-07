@@ -1,4 +1,4 @@
-describe( 'Payment Modules', () => {
+describe.skip( 'Payment Modules', () => {
 	it('Test that one time selects Stripe', () => {
 		/* TEST: One time selection results in Stripe */
 		cy.visit(('https://donations.ourdailybread.org/intm4.html'));

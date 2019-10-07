@@ -1,7 +1,7 @@
 context('ODB-Experience', () => {
     describe('Accessibility', () => {
         beforeEach(() => {
-            cy.visit('https://localhost:3000')
+            cy.visit('https://odb.org/')
             cy.injectAxe()
         })
 

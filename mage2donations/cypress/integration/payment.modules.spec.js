@@ -11,7 +11,7 @@ describe( 'Payment Modules', () => {
 		cy.get('[data-cy=giveonce]').click();
 		cy.get('#product-addtocart-button').click();
 
-		cy.wait(9000);
+		cy.wait(12000);
 
 		cy.get('#customer-email').click().type('noreply@odb.org');
 		cy.get('#billingaddress [name=firstname]').click().type('Peter');

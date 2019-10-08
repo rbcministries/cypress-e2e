@@ -1,10 +1,5 @@
 # Use an official Python runtime as a parent image
 FROM cypress/base:10
 
-COPY package.json package.json
-RUN npm i
-
-COPY ./cypress ./cypress
-COPY ./cypress.json ./cypress.json
-
-CMD ["npm", "test"]
+RUN npm install --save-dev cypress
+RUN npm install -g serve pm2

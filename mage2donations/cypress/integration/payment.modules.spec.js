@@ -1,4 +1,4 @@
-describe( 'Payment Modules', () => {
+describe.skip( 'Payment Modules', () => {
 	it('Test that one time selects Stripe', () => {
 		cy.server();
 		cy.route('https://dev.mage2.org/checkout').as('checkoutpage');
@@ -22,7 +22,6 @@ describe( 'Payment Modules', () => {
 		cy.get('#billingaddress [name=postcode]').click().type('49512');
 		cy.get('.payment-method._active button.primary.action-update').click();
 
-		//cy.wait(3000);
 		cy.get('#activate_stripe').should("exist");
 
 	});
@@ -49,9 +48,6 @@ describe( 'Payment Modules', () => {
 		cy.get('#billingaddress [name=postcode]').click().type('49512');
 		cy.get('.payment-method._active button.primary.action-update').click();
 
-		//cy.wait(3000);
 		cy.get('#activate_stripe').should("not.exist");
-
-
 	})
 });

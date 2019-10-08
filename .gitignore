@@ -1,0 +1,7 @@
+mochawesome-report/
+reports/
+**/*/.DS_Store
+.DS_Store
+reports.json
+node_modules
+**/*/screenshots/

@@ -1,0 +1,105 @@
+{
+    "resource": "/journals",
+    "path": "/interactions/journals/",
+    "httpMethod": "GET",
+    "headers": {
+        "accept": "application/json, text/plain, */*",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-US,en;q=0.9,es;q=0.8,pt;q=0.7,de;q=0.6",
+        "cache-control": "no-cache",
+        "Host": "api.experience.odb.org",
+        "origin": "http://localhost:3000",
+        "pragma": "no-cache",
+        "referer": "http://localhost:3000/journals/20190605",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+        "x-amz-date": "20190606T204705Z",
+        "x-amz-security-token": "AgoGb3JpZ2luEGEaCXVzLWVhc3QtMSKAAjJFaVs5QNmYrp2nKnNtqSRFNR+2CN9za8iYEM4F/BM21BSSymN4D58Yoq/zfmCufYMz8lZB1mCABaqpsN9/X3O0Aq6TNpp++MX763nP0C0U3FsfjVMVwujZrjCefrZ3wbwVTTcK3wAVb9IxykOOxkoM96qNZy11HqvWzr1WUnh+jVxpjIHSpI0EpjYTezX4mD4S++RsbP3Y6000Kz3DupQTKPYOTT/0nBcrbB4sb7xyVP2hUyTURqFKI9Ulyfqd6D5RxjD3RJLah6C9qoMz1wSjGOsqhO8VnBgWe1Vi1zS3URy1/KI0FZOUJvVWHBt61TYI/1hsrRJF4orLvtkx6gUqpgUINhAAGgwwNjgyMDYwMDA1NzIiDOIOwWwc3mzpxmr+EiqDBTX7q3hiX3A6BmtsPZ5QQS9GT4mPKTSfGWqw2AMfWg+xcjegma6GWti/HWjOIm62hsmVDZ7dsLRLxVJI7ZwPTvuYvc98Jh+aQlXkTjvBgPpB5yq8EgBQqILIOaoMyFI3sIIUCz3suelxma/zpzuWBwk9sRdzcsj8wuDw7ludY/YZRqN7Fde/qQFwefhBrlh08/dGu4LZj1n3f8/gBZO6Ly//SyK7XU49+1tMa81YC7lWHKSu18wp0reV9C0VDsXotbK6oPuk2Jw5SqGXidpFfosDxRgHj/cHFF1Kc0PtntH2mvHaNaD0IjiGKo3tvdCrcQ3h5yEv3DQKUTUluX7IlFtH1S+qQ+AQN1IRHxG4IidlPxjWCnXVRESRfVnJUuOlMOX5aFkIo59m9TKdgs+N+7/dHIK8kMtTN3i94OgbxD1ZrGXoEPn9mqpRZEg3yJIOCmurtlf5JbK03tab+fW+3a/WuITkMBzaC2GL2xLAe9azFQh7uOwNSaps5VYFTe6BVeMTGzn8ASNqycElC5jJlzx65OISEQ4F7X4BlKgotyzpzr7iAE8eb2wXN8au+fz0uXbNmISJ6njpdmrUs3irtCusvdkUMl0VXRK5nnxOzdVGz2iMvxbhpB/RjL8YimFyxzvf4tUGDsKrx4Aoh9DxaWrdiHGVlQby69bzfhf/KbtwBuShOTRtWt6c/VrgSLHWwSbLct7L6vyjz3DGLpBIqiMey2MiWovSDRHXzx8E9I1QGaP9oTm4YMqYEEubQir3u7KYy6Gm7cq2SNz9/UJF3tulZqHDgUf9FQy7AqWhPOwZJX2s8ajMWade18NMj/8m6fCb9e4dc3QG6UzNAc0dPN5Gjocwx/fl5wU=",
+        "X-Amzn-Trace-Id": "Root=1-5cf97bc9-17692534ad575efdb66cd28d",
+        "X-Forwarded-For": "67.59.39.10",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "accept": [
+            "application/json, text/plain, */*"
+        ],
+        "accept-encoding": [
+            "gzip, deflate, br"
+        ],
+        "accept-language": [
+            "en-US,en;q=0.9,es;q=0.8,pt;q=0.7,de;q=0.6"
+        ],
+        "cache-control": [
+            "no-cache"
+        ],
+        "Host": [
+            "api.experience.odb.org"
+        ],
+        "origin": [
+            "http://localhost:3000"
+        ],
+        "pragma": [
+            "no-cache"
+        ],
+        "referer": [
+            "http://localhost:3000/journals/20190605"
+        ],
+        "User-Agent": [
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+        ],
+        "x-amz-date": [
+            "20190606T204705Z"
+        ],
+        "x-amz-security-token": [
+            "AgoGb3JpZ2luEGEaCXVzLWVhc3QtMSKAAjJFaVs5QNmYrp2nKnNtqSRFNR+2CN9za8iYEM4F/BM21BSSymN4D58Yoq/zfmCufYMz8lZB1mCABaqpsN9/X3O0Aq6TNpp++MX763nP0C0U3FsfjVMVwujZrjCefrZ3wbwVTTcK3wAVb9IxykOOxkoM96qNZy11HqvWzr1WUnh+jVxpjIHSpI0EpjYTezX4mD4S++RsbP3Y6000Kz3DupQTKPYOTT/0nBcrbB4sb7xyVP2hUyTURqFKI9Ulyfqd6D5RxjD3RJLah6C9qoMz1wSjGOsqhO8VnBgWe1Vi1zS3URy1/KI0FZOUJvVWHBt61TYI/1hsrRJF4orLvtkx6gUqpgUINhAAGgwwNjgyMDYwMDA1NzIiDOIOwWwc3mzpxmr+EiqDBTX7q3hiX3A6BmtsPZ5QQS9GT4mPKTSfGWqw2AMfWg+xcjegma6GWti/HWjOIm62hsmVDZ7dsLRLxVJI7ZwPTvuYvc98Jh+aQlXkTjvBgPpB5yq8EgBQqILIOaoMyFI3sIIUCz3suelxma/zpzuWBwk9sRdzcsj8wuDw7ludY/YZRqN7Fde/qQFwefhBrlh08/dGu4LZj1n3f8/gBZO6Ly//SyK7XU49+1tMa81YC7lWHKSu18wp0reV9C0VDsXotbK6oPuk2Jw5SqGXidpFfosDxRgHj/cHFF1Kc0PtntH2mvHaNaD0IjiGKo3tvdCrcQ3h5yEv3DQKUTUluX7IlFtH1S+qQ+AQN1IRHxG4IidlPxjWCnXVRESRfVnJUuOlMOX5aFkIo59m9TKdgs+N+7/dHIK8kMtTN3i94OgbxD1ZrGXoEPn9mqpRZEg3yJIOCmurtlf5JbK03tab+fW+3a/WuITkMBzaC2GL2xLAe9azFQh7uOwNSaps5VYFTe6BVeMTGzn8ASNqycElC5jJlzx65OISEQ4F7X4BlKgotyzpzr7iAE8eb2wXN8au+fz0uXbNmISJ6njpdmrUs3irtCusvdkUMl0VXRK5nnxOzdVGz2iMvxbhpB/RjL8YimFyxzvf4tUGDsKrx4Aoh9DxaWrdiHGVlQby69bzfhf/KbtwBuShOTRtWt6c/VrgSLHWwSbLct7L6vyjz3DGLpBIqiMey2MiWovSDRHXzx8E9I1QGaP9oTm4YMqYEEubQir3u7KYy6Gm7cq2SNz9/UJF3tulZqHDgUf9FQy7AqWhPOwZJX2s8ajMWade18NMj/8m6fCb9e4dc3QG6UzNAc0dPN5Gjocwx/fl5wU="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-5cf97bc9-17692534ad575efdb66cd28d"
+        ],
+        "X-Forwarded-For": [
+            "67.59.39.10"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "v1gsd1",
+        "resourcePath": "/journals",
+        "httpMethod": "GET",
+        "extendedRequestId": "a4BHiE57IAMFrww=",
+        "requestTime": "06/Jun/2019:20:47:05 +0000",
+        "path": "/interactions/journals/",
+        "accountId": "068206000572",
+        "protocol": "HTTP/1.1",
+        "stage": "dev",
+        "domainPrefix": "api",
+        "requestTimeEpoch": 1559854025893,
+        "requestId": "3ea72dac-889c-11e9-9c79-33ffb3a461b3",
+        "identity": {
+            "cognitoIdentityPoolId": "us-east-1:bd786e82-41a1-49b9-a78d-c1f4d04a5d0b",
+            "accountId": "068206000572",
+            "cognitoIdentityId": "us-east-1:0986296b-21bd-4e59-8f4b-d7d4f08aef72",
+            "caller": "AROAIXGYDZ74LSQY2JQA6:CognitoIdentityCredentials",
+            "sourceIp": "67.59.39.10",
+            "principalOrgId": "o-nnd3zzxqhu",
+            "accessKey": "ASIAQ7YLE7G6DJ4CL5N7",
+            "cognitoAuthenticationType": "authenticated",
+            "cognitoAuthenticationProvider": "cognito-idp.us-east-1.amazonaws.com/us-east-1_XJN8imX9v,cognito-idp.us-east-1.amazonaws.com/us-east-1_XJN8imX9v:CognitoSignIn:ce035b41-7bfc-4cd9-b9b1-35f1ae52d9b2",
+            "userArn": "arn:aws:sts::068206000572:assumed-role/DynamoAPI/CognitoIdentityCredentials",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+            "user": "AROAIXGYDZ74LSQY2JQA6:CognitoIdentityCredentials"
+        },
+        "domainName": "api.experience.odb.org",
+        "apiId": "hyvepa3qn7"
+    },
+    "body": null,
+    "isBase64Encoded": false
+}

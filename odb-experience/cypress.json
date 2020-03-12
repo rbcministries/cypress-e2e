@@ -13,5 +13,6 @@
       "html": false,
       "json": true,
       "reportDir": "../reports"
-    }
+    },
+    "chromeWebSecurity": false
 }

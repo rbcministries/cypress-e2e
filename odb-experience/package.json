@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx cypress run --reporter mochawesome",
     "build": "docker build -t odb-experience-test . && docker tag odb-experience-test:latest 068206000572.dkr.ecr.us-east-1.amazonaws.com/odb-experience-test:latest && docker push 068206000572.dkr.ecr.us-east-1.amazonaws.com/odb-experience-test:latest",
-    "test:devo": "npx cypress run --spec tests/integration/devotional/visit.spec.js"
+    "test:devo": "npx cypress run --record --key $CYPRESS_KEY --spec tests/integration/devotional/visit.spec.js"
   },
   "author": "",
   "license": "ISC",

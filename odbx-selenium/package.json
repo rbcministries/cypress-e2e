@@ -1,10 +1,11 @@
+
 {
   "name": "odbx-selenium",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xvfb-run --server-args=\"-screen 0, 1366x768x24\" npx selenium-standalone start & npx wait-port 127.0.0.1:4444 &&  npx mocha visit.test.js"
   },
   "author": "",
   "license": "ISC",

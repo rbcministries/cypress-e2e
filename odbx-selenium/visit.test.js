@@ -19,6 +19,11 @@ describe('Devotional', function () {
         const footer = driver.findElement(By.tagName('footer'));
         await driver.executeScript("arguments[0].scrollIntoView()", footer);
 
+        await driver.executeScript("window.scrollTo(0, document.body.scrollHeight)", footer);
+
+        const footerAddress = await driver.wait(until.elementLocated(By.css('footer address')), 30000);
+        await driver.wait(until.elementIsVisible(footerAddress), 30000);
+
         const imgData = await driver.takeScreenshot();
         fs.writeFileSync('img.png', imgData, 'base64');
 

@@ -5,7 +5,7 @@ const fs = require('fs');
 const { webdriver, Builder, By, Key, until } = wd;
 
 describe('Devotional', function () {
-    this.timeout(30000);
+    this.timeout(120000); // 2 minutes, just in case
     it('Visit', async function () {
         const driver = await new Builder()
         .usingServer('http://127.0.0.1:4444/wd/hub')        
@@ -25,7 +25,7 @@ describe('Devotional', function () {
         await driver.wait(until.elementIsVisible(footerAddress), 30000);
 
         const imgData = await driver.takeScreenshot();
-        fs.writeFileSync('img.png', imgData, 'base64');
+        fs.writeFile('img.png', imgData, 'base64');
 
         let titleHome = await driver.getTitle();
 

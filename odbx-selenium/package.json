@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "xvfb-run --server-args=\"-screen 0, 1366x768x24\" npx selenium-standalone start --config=./config.js & npx wait-port 127.0.0.1:4444 -t 30000 &&  npx mocha visit.test.js"
+    "test": "xvfb-run --server-args=\"-screen 0, 1366x768x24\" npx selenium-standalone start --config=./config.js & npx wait-port 127.0.0.1:4444 -t 60000 &&  npx mocha visit.test.js"
   },
   "author": "",
   "license": "ISC",

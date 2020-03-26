@@ -1,5 +1,5 @@
 let assert = require('chai').assert,
-wd = require('selenium-webdriver');
+    wd = require('selenium-webdriver');
 
 const fs = require('fs');
 const { webdriver, Builder, By, Key, until } = wd;
@@ -8,8 +8,8 @@ describe('Devotional', function () {
     this.timeout(120000); // 2 minutes, just in case
     it('Visit', async function () {
         const driver = await new Builder()
-        .usingServer('http://127.0.0.1:4444/wd/hub')        
-        .forBrowser('firefox').build();
+            .usingServer('http://127.0.0.1:4444/wd/hub')
+            .forBrowser('firefox').build();
         await driver.get('https://odb.org/');
 
         const todayButton = By.css('h1.today-title>a');
@@ -25,7 +25,10 @@ describe('Devotional', function () {
         await driver.wait(until.elementIsVisible(footerAddress), 30000);
 
         const imgData = await driver.takeScreenshot();
-        fs.writeFile('img.png', imgData, 'base64');
+        fs.writeFile('img.png', imgData, 'base64', function (err) {
+            if (err) return console.log(err);
+            console.log('Screenshot saved');
+        });
 
         let titleHome = await driver.getTitle();
 

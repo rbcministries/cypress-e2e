@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "xvfb-run --server-args=\"-screen 0, 1600x1200x16\" npx selenium-standalone start --config=./config.js > /dev/null 2>&1 & npx wait-port 127.0.0.1:4444 -t 60000 &&  npx mocha visit.test.js"
+    "test": "xvfb-run --server-args=\"-screen 0, 1600x1200x16\" npx selenium-standalone start --config=./config.js > /dev/null 2>&1 & npx wait-port 127.0.0.1:4444 -t 60000 &&  npx mocha visit.test.js && sudo kill -9 $(sudo lsof -t -i:4444) &&  sudo kill -9 $(sudo lsof -t -i:4444) || echo 'killed'"
   },
   "author": "",
   "license": "ISC",
